@@ -51,7 +51,7 @@ function displayTask() {
     todolist.appendChild(li);
   });
 
-  updateCouner();
+  updateCounter();
 }
 
 function updateCounter() {

@@ -4,34 +4,15 @@ A real-time weather application that fetches current weather data using the Open
 
 ## Setup Instructions
 
-### 1. Get Your API Key
+The app works out of the box: `config.js` with a free OpenWeatherMap API key is included in the repo, so you can just open `index.html` in your browser.
 
-- Go to [OpenWeatherMap](https://openweathermap.org/api)
-- Sign up for a free account
-- Get your API key from the dashboard
+**⚠️ Note**: The key in `config.js` is public. To use your own key, get one at [OpenWeatherMap](https://openweathermap.org/api) and replace the value in `config.js`:
 
-### 2. Configure the App
-
-- Copy `config.example.js` to `config.js`:
-
-  ```bash
-  cp config.example.js config.js
-  ```
-
-- Open `config.js` and replace `your_api_key_here` with your actual API key:
-
-  ```javascript
-  const CONFIG = {
-    WEATHER_API_KEY: "your_actual_api_key_here",
-  };
-  ```
-
-### 3. Run the App
-
-- Open `index.html` in your browser
-- Start searching for weather!
-
-**⚠️ Important**: Never commit `config.js` to git! It's already in `.gitignore`.
+```javascript
+const CONFIG = {
+  WEATHER_API_KEY: "your_actual_api_key_here",
+};
+```
 
 ## Features
 

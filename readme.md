@@ -10,13 +10,13 @@ A collection of vanilla JavaScript projects demonstrating core JS fundamentals w
 
 | #   | Project                                 | Key Concepts             | Live Demo                                                                  |
 | --- | --------------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
-| 7   | 🧠 [Quiz App](#-quiz-app)               | SPA, API, Timer, State   | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/07-quiz-app/)        |
-| 6   | 🌤️ [Weather App](#-weather-app)         | API, Async/Await, Themes | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/06-weather-app/)     |
-| 5   | 🎨 [Color Generator](#-color-generator) | Arrays, Clipboard API    | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/05-color-generator/) |
-| 4   | 🪟 [Modal Window](#-modal-window)       | Events, DOM, Keyboard    | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/04-modal-window/)    |
-| 3   | ✅ [Todo List](#-todo-list)             | localStorage, CRUD       | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/03-todo-list/)       |
-| 2   | 💰 [Tip Calculator](#-tip-calculator)   | Forms, Validation        | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/02-tip-calculator/)  |
-| 1   | 🔢 [Counter](#-counter)                 | DOM, Events, State       | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/01-counter/)         |
+| 7   | 🧠 [Quiz App](#-quiz-app)               | SPA, API, Timer, State   | [Demo](https://reshmii143.github.io/JS-Project/07-quiz-app/)        |
+| 6   | 🌤️ [Weather App](#-weather-app)         | API, Async/Await, Themes | [Demo](https://reshmii143.github.io/JS-Project/06-weather-app/)     |
+| 5   | 🎨 [Color Generator](#-color-generator) | Arrays, Clipboard API    | [Demo](https://reshmii143.github.io/JS-Project/05-color-generator/) |
+| 4   | 🪟 [Modal Window](#-modal-window)       | Events, DOM, Keyboard    | [Demo](https://reshmii143.github.io/JS-Project/04-modal-window/)    |
+| 3   | ✅ [Todo List](#-todo-list)             | localStorage, CRUD       | [Demo](https://reshmii143.github.io/JS-Project/03-todo-list/)       |
+| 2   | 💰 [Tip Calculator](#-tip-calculator)   | Forms, Validation        | [Demo](https://reshmii143.github.io/JS-Project/02-tip-calculator/)  |
+| 1   | 🔢 [Counter](#-counter)                 | DOM, Events, State       | [Demo](https://reshmii143.github.io/JS-Project/01-counter/)         |
 
 ---
 
@@ -190,10 +190,10 @@ Simple counter with controls.
 
 ```bash
 # Clone the repository
-git clone https://github.com/LazyTanakaS/JS-Mini-Projects.git
+git clone https://github.com/Reshmii143/JS-Project.git
 
 # Navigate to any project
-cd JS-Mini-Projects/07-quiz-app
+cd JS-Project/07-quiz-app
 
 # Open in browser
 open index.html

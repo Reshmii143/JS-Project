@@ -30,7 +30,7 @@ openBtns.forEach((btn) => {
     if (btn.id === "infoImg") {
       // image content
       modalTitle.textContent =
-        '""Pinterest" Would Like to Send You Notifications Similar to These';
+        '"Pinterest" Would Like to Send You Notifications Similar to These';
       modalImage.style.display = "block";
       modalDescription.textContent =
         "Notifications may include alerts, sounds, and icon badges. These can be configured in Settings.";
@@ -65,18 +65,18 @@ openBtns.forEach((btn) => {
       // battery content
       modalBattery.style.display = "block";
       modalTitle.textContent =
-        '""Tinder" has been heavily using your battery lately. Do you want to continue using it?';
+        '"Tinder" has been heavily using your battery lately. Do you want to continue using it?';
       modalDescription.textContent =
         "Continuous drainage like this can impact battery health, capacity, and overall system performance.";
       modalBtnFirst.textContent = "Delete App";
       modalBtnFirst.style.color = "#ff3b30";
-      modalBtnSecond.textContent = "Disabel Background Usage";
+      modalBtnSecond.textContent = "Disable Background Usage";
       modalBtnThird.textContent = "Cancel";
       modalBtnThird.style.color = "#007aff";
     } else if (btn.id === "infoContacts") {
       // contacts content
       modalTitle.textContent =
-        '""TikTok" Would Like Full Access to Your Contacts';
+        '"TikTok" Would Like Full Access to Your Contacts';
       modalContact.style.display = "block";
       modalLabel.style.display = "block";
       modalDescription.textContent =

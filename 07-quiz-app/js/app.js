@@ -141,7 +141,7 @@ function showScreen(screenName) {
 
 function handleAnswersClick(selectedAnswer, buttonElement) {
   const currentQuestion = state.questions[state.currentQuestionIndex];
-  const correctAnswer = currentQuestion.correct_answer;
+  const correctAnswer = decodeHTML(currentQuestion.correct_answer);
 
   const allAnswerButtons = document.querySelectorAll(".answer-btn");
   allAnswerButtons.forEach((button) => {
@@ -199,6 +199,11 @@ async function loadQuestions() {
     const url = buildApiUrl();
     const response = await fetch(url);
     const data = await response.json();
+
+    if (data.response_code !== 0 || !data.results?.length) {
+      alert("Not enough questions for these settings. Try fewer questions or another category.");
+      return;
+    }
 
     state.questions = data.results;
     state.currentQuestionIndex = 0;
@@ -330,7 +335,7 @@ function startTimer() {
 
 function handleTimeOut() {
   const currentQuestion = state.questions[state.currentQuestionIndex];
-  const correctAnswer = currentQuestion.correct_answer;
+  const correctAnswer = decodeHTML(currentQuestion.correct_answer);
   const allAnswersButtons = document.querySelectorAll(".answer-btn");
 
   allAnswersButtons.forEach((button) => {

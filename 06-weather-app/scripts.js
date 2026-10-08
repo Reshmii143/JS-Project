@@ -24,7 +24,7 @@ input.addEventListener("keypress", (e) => {
 
 async function getWeather(city) {
   const API_KEY = CONFIG.WEATHER_API_KEY;
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=eng`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric&lang=eng`;
 
   showLoading();
 
@@ -74,7 +74,7 @@ function displayWeather(data) {
   const humidity = data.main.humidity;
   const visibility = (data.visibility / 1000).toFixed(1);
 
-  const mapIcon = getIconPath("map-pi");
+  const mapIcon = getIconPath("map-pin");
   const thermometerIcon = getIconPath("thermometer");
   const windIcon = getIconPath("wind");
   const dropletIcon = getIconPath("droplet");
@@ -191,7 +191,7 @@ function displayHistory() {
     weatherCard.className = "weather";
     weatherCard.innerHTML = `
       <div class="history-city">${item.city}</div>
-      <img src="https://openweathermap.org/img/wn/${item.icon}@2x.png" alt="${item.description}">
+      <img src="https://openweathermap.org/img/wn/${item.icon}@2x.png" alt="${item.city}">
       <div class="history-temp">${item.temp}°C</div>`;
 
     weatherCard.addEventListener("click", () => {
@@ -221,7 +221,7 @@ function updateWeatherIcons() {
     '.datail-image img[alt="Visibility"]'
   );
 
-  if (mapImg) mapImg.src = getIconPath("map-pi");
+  if (mapImg) mapImg.src = getIconPath("map-pin");
   if (thermometerImg) thermometerImg.src = getIconPath("thermometer");
   if (windImg) windImg.src = getIconPath("wind");
   if (humidityImg) humidityImg.src = getIconPath("droplet");
