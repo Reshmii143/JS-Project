@@ -1,6 +1,3 @@
-# API Keys и конфиденциальные данные
-config.js
-
 # Environment variables
 .env
 .env.local
